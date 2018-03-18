@@ -1,4 +1,9 @@
-public class FrenchHorn extends Instrument implements IPlay, ISell {
+package Items.Instruments;
+
+import Behaviours.IPlay;
+import Behaviours.ISell;
+
+public class FrenchHorn extends Instrument implements IPlay {
 
     private String brand;
     private String key;
@@ -19,10 +24,6 @@ public class FrenchHorn extends Instrument implements IPlay, ISell {
 
     public String play() {
         return "Horn horn horn ...";
-    }
-
-    public double calculateMarkup() {
-        return getSellingPrice() - getBuyingPrice();
     }
 
 }

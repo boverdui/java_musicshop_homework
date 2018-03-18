@@ -1,4 +1,8 @@
-public class Cello extends Instrument implements IPlay, ISell {
+package Items.Instruments;
+
+import Behaviours.IPlay;
+
+public class Cello extends Instrument implements IPlay {
 
     private String builder;
 
@@ -12,11 +16,7 @@ public class Cello extends Instrument implements IPlay, ISell {
     }
 
     public String play() {
-        return "Cello cello cello ...";
-    }
-
-    public double calculateMarkup() {
-        return getSellingPrice() - getBuyingPrice();
+        return "Items.Instruments.Cello cello cello ...";
     }
 
 }

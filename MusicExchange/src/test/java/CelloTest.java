@@ -1,3 +1,5 @@
+import Items.Instruments.Cello;
+import Items.Instruments.Type;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,7 +11,7 @@ public class CelloTest {
 
     @Before
     public void before() {
-        cello = new Cello(Type.STRING, "Stradivarius", 100000.00, 125000.00);
+        cello = new Cello(Type.STRING, "Aitchison", 22000.00, 25000.00);
     }
 
     @Test
@@ -19,27 +21,27 @@ public class CelloTest {
 
     @Test
     public void hasBuilder() {
-        assertEquals("Stradivarius", cello.getBuilder());
+        assertEquals("Aitchison", cello.getBuilder());
     }
 
     @Test
     public void canPlay() {
-        assertEquals("Cello cello cello ...", cello.play());
+        assertEquals("Items.Instruments.Cello cello cello ...", cello.play());
     }
 
     @Test
     public void hasBuyingPrice() {
-        assertEquals(100000.00, cello.getBuyingPrice(), 0.01);
+        assertEquals(22000.00, cello.getBuyingPrice(), 0.01);
     }
 
     @Test
     public void hasSellingPrice() {
-        assertEquals(125000.00, cello.getSellingPrice(), 0.01);
+        assertEquals(25000.00, cello.getSellingPrice(), 0.01);
     }
 
     @Test
     public void canCalculateMarkup() {
-        assertEquals(25000.00, cello.calculateMarkup(), 0.01);
+        assertEquals(3000.00, cello.calculateMarkup(), 0.01);
     }
 
 }

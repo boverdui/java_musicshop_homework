@@ -1,3 +1,5 @@
+import Items.Instruments.FrenchHorn;
+import Items.Instruments.Type;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,7 +11,7 @@ public class FrenchHornTest {
 
     @Before
     public void before() {
-        frenchHorn = new FrenchHorn(Type.BRASS,"Alexander", "F", 4000.00, 5000.00);
+        frenchHorn = new FrenchHorn(Type.BRASS,"Alexander", "Bb/F", 4500.00, 5500.00);
     }
 
     @Test
@@ -24,7 +26,7 @@ public class FrenchHornTest {
 
     @Test
     public void hasKey() {
-        assertEquals("F", frenchHorn.getKey());
+        assertEquals("Bb/F", frenchHorn.getKey());
     }
 
     @Test
@@ -34,12 +36,12 @@ public class FrenchHornTest {
 
     @Test
     public void hasBuyingPrice() {
-        assertEquals(4000.00, frenchHorn.getBuyingPrice(), 0.01);
+        assertEquals(4500.00, frenchHorn.getBuyingPrice(), 0.01);
     }
 
     @Test
     public void hasSellingPrice() {
-        assertEquals(5000.00, frenchHorn.getSellingPrice(), 0.01);
+        assertEquals(5500.00, frenchHorn.getSellingPrice(), 0.01);
     }
 
     @Test

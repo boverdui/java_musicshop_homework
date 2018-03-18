@@ -1,3 +1,5 @@
+import Items.Instruments.Clarinet;
+import Items.Instruments.Type;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -9,7 +11,7 @@ public class ClarinetTest {
 
     @Before
     public void before() {
-        clarinet = new Clarinet(Type.WOODWIND, "Wurlitzer", "Bb", 5000.00, 6000.00);
+        clarinet = new Clarinet(Type.WOODWIND, "Wurlitzer", "Bb", 4000.00, 5000.00);
     }
 
     @Test
@@ -34,12 +36,12 @@ public class ClarinetTest {
 
     @Test
     public void hasBuyingPrice() {
-        assertEquals(5000.00, clarinet.getBuyingPrice(), 0.01);
+        assertEquals(4000.00, clarinet.getBuyingPrice(), 0.01);
     }
 
     @Test
     public void hasSellingPrice() {
-        assertEquals(6000.00, clarinet.getSellingPrice(), 0.01);
+        assertEquals(5000.00, clarinet.getSellingPrice(), 0.01);
     }
 
     @Test

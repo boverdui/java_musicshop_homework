@@ -1,4 +1,9 @@
-public class Clarinet extends Instrument implements IPlay, ISell {
+package Items.Instruments;
+
+import Behaviours.IPlay;
+import Behaviours.ISell;
+
+public class Clarinet extends Instrument implements IPlay {
 
     private String brand;
     private String key;
@@ -19,10 +24,6 @@ public class Clarinet extends Instrument implements IPlay, ISell {
 
     public String play() {
         return "Clarinet clarinet clarinet ...";
-    }
-
-    public double calculateMarkup() {
-        return getSellingPrice() - getBuyingPrice();
     }
 
 }
