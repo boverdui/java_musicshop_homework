@@ -1,9 +1,8 @@
 package Items.Other;
 
-import Behaviours.ISell;
 import Items.Item;
 
-public class Bow extends Item implements ISell {
+public class Bow extends Item {
 
     private String description;
     private String maker;

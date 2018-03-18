@@ -12,11 +12,11 @@ public class Shop {
         this.stock = new ArrayList<>();
     }
 
-    public void addToStock(ISell item) {
+    public void addItemToStock(ISell item) {
         this.stock.add(item);
     }
 
-    public void removeFromStock(ISell item) {
+    public void removeItemFromStock(ISell item) {
         this.stock.remove(item);
     }
 

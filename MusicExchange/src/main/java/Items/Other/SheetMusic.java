@@ -1,9 +1,8 @@
 package Items.Other;
 
-import Behaviours.ISell;
 import Items.Item;
 
-public class SheetMusic extends Item implements ISell {
+public class SheetMusic extends Item {
 
     private String title;
     private String composer;

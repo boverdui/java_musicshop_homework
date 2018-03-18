@@ -32,26 +32,26 @@ public class ShopTest {
     }
 
     @Test
-    public void canAddToStock() {
-        shop.addToStock(cello);
+    public void canAddItemToStock() {
+        shop.addItemToStock(cello);
         assertEquals(Arrays.asList(cello), shop.getStock());
     }
 
     @Test
-    public void canRemoveFromStock() {
-        shop.addToStock(cello);
-        shop.addToStock(clarinet);
-        shop.removeFromStock(cello);
+    public void canRemoveItemFromStock() {
+        shop.addItemToStock(cello);
+        shop.addItemToStock(clarinet);
+        shop.removeItemFromStock(cello);
         assertEquals(Arrays.asList(clarinet), shop.getStock());
     }
 
     @Test
     public void canCalculateMaxProfit() {
-        shop.addToStock(cello);
-        shop.addToStock(clarinet);
-        shop.addToStock(frenchHorn);
-        shop.addToStock(bow);
-        shop.addToStock(sheetMusic);
+        shop.addItemToStock(cello);
+        shop.addItemToStock(clarinet);
+        shop.addItemToStock(frenchHorn);
+        shop.addItemToStock(bow);
+        shop.addItemToStock(sheetMusic);
         assertEquals(5255.00, shop.calculateMaxProfit(), 0.01);
     }
 
