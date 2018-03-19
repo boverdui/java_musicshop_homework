@@ -10,7 +10,12 @@ public class SheetMusicTest {
 
     @Before
     public void before() {
-        sheetMusic = new SheetMusic("Cello Suites", "Bach", 5.00, 10.00);
+        sheetMusic = new SheetMusic("A description of this item","Cello Suites", "Bach", 5.00, 10.00);
+    }
+
+    @Test
+    public void hasDescription() {
+        assertEquals("A description of this item", sheetMusic.getDescription());
     }
 
     @Test

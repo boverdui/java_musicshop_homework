@@ -6,8 +6,8 @@ public abstract class Instrument extends Item {
 
     private Type type;
 
-    public Instrument(Type type, double buyingPrice, double sellingPrice) {
-        super(buyingPrice, sellingPrice);
+    public Instrument(Type type, String description, double buyingPrice, double sellingPrice) {
+        super(description, buyingPrice, sellingPrice);
         this.type = type;
     }
 

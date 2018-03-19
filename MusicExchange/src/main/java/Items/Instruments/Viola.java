@@ -2,11 +2,11 @@ package Items.Instruments;
 
 import Behaviours.IPlay;
 
-public class Cello extends Instrument implements IPlay {
+public class Viola extends Instrument implements IPlay {
 
     private String builder;
 
-    public Cello(Type type, String description, String builder, double buyingPrice, double sellingPrice) {
+    public Viola(Type type, String description, String builder, double buyingPrice, double sellingPrice) {
         super(type, description, buyingPrice, sellingPrice);
         this.builder = builder;
     }
@@ -16,7 +16,7 @@ public class Cello extends Instrument implements IPlay {
     }
 
     public String play() {
-        return "The sound of the cello ...";
+        return "The sound of the viola ...";
     }
 
 }

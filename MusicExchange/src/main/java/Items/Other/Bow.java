@@ -4,17 +4,11 @@ import Items.Item;
 
 public class Bow extends Item {
 
-    private String description;
     private String maker;
 
     public Bow(String description, String maker, double buyingPrice, double sellingPrice) {
-        super(buyingPrice, sellingPrice);
-        this.description = description;
+        super(description, buyingPrice, sellingPrice);
         this.maker = maker;
-    }
-
-    public String getDescription() {
-        return this.description;
     }
 
     public String getMaker() {

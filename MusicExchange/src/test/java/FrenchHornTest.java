@@ -11,12 +11,16 @@ public class FrenchHornTest {
 
     @Before
     public void before() {
-        frenchHorn = new FrenchHorn(Type.BRASS,"Alexander", "Bb/F", 4500.00, 5500.00);
+        frenchHorn = new FrenchHorn(Type.BRASS, "A description of this item","Alexander", "Bb/F", 4500.00, 5500.00);
     }
 
     @Test
     public void hasType() {
         assertEquals(Type.BRASS, frenchHorn.getType());
+    }
+    @Test
+    public void hasDescription() {
+        assertEquals("A description of this item", frenchHorn.getDescription());
     }
 
     @Test
@@ -31,7 +35,7 @@ public class FrenchHornTest {
 
     @Test
     public void canPlay() {
-        assertEquals("Horn horn horn ...", frenchHorn.play());
+        assertEquals("The sound of the french horn ...", frenchHorn.play());
     }
 
     @Test

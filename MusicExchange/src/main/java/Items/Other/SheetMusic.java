@@ -7,8 +7,8 @@ public class SheetMusic extends Item {
     private String title;
     private String composer;
 
-    public SheetMusic(String title, String composer, double buyingPrice, double sellingPrice) {
-        super(buyingPrice, sellingPrice);
+    public SheetMusic(String description, String title, String composer, double buyingPrice, double sellingPrice) {
+        super(description, buyingPrice, sellingPrice);
         this.title = title;
         this.composer = composer;
     }

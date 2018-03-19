@@ -11,12 +11,17 @@ public class CelloTest {
 
     @Before
     public void before() {
-        cello = new Cello(Type.STRING, "Aitchison", 22000.00, 25000.00);
+        cello = new Cello(Type.STRING, "A description of this item","Aitchison", 22000.00, 25000.00);
     }
 
     @Test
     public void hasType() {
         assertEquals(Type.STRING, cello.getType());
+    }
+
+    @Test
+    public void hasDescription() {
+        assertEquals("A description of this item", cello.getDescription());
     }
 
     @Test
@@ -26,7 +31,7 @@ public class CelloTest {
 
     @Test
     public void canPlay() {
-        assertEquals("Items.Instruments.Cello cello cello ...", cello.play());
+        assertEquals("The sound of the cello ...", cello.play());
     }
 
     @Test

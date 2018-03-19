@@ -1,15 +1,14 @@
 package Items.Instruments;
 
 import Behaviours.IPlay;
-import Behaviours.ISell;
 
 public class FrenchHorn extends Instrument implements IPlay {
 
     private String brand;
     private String key;
 
-    public FrenchHorn(Type type, String brand, String key, double buyingPrice, double sellingPrice) {
-        super(type, buyingPrice, sellingPrice);
+    public FrenchHorn(Type type, String description, String brand, String key, double buyingPrice, double sellingPrice) {
+        super(type, description, buyingPrice, sellingPrice);
         this.brand = brand;
         this.key = key;
     }
@@ -23,7 +22,7 @@ public class FrenchHorn extends Instrument implements IPlay {
     }
 
     public String play() {
-        return "Horn horn horn ...";
+        return "The sound of the french horn ...";
     }
 
 }

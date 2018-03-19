@@ -10,12 +10,12 @@ public class BowTest {
 
     @Before
     public void before() {
-        bow = new Bow("cello bow", "Alfons Riedl", 1250.00, 1500.00);
+        bow = new Bow("A description of this item", "Alfons Riedl", 1250.00, 1500.00);
     }
 
     @Test
     public void hasDescription() {
-        assertEquals("cello bow", bow.getDescription());
+        assertEquals("A description of this item", bow.getDescription());
     }
 
     @Test

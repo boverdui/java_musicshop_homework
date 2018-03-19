@@ -11,12 +11,17 @@ public class ClarinetTest {
 
     @Before
     public void before() {
-        clarinet = new Clarinet(Type.WOODWIND, "Wurlitzer", "Bb", 4000.00, 5000.00);
+        clarinet = new Clarinet(Type.WOODWIND, "A description of this item","Wurlitzer", "Bb", 4000.00, 5000.00);
     }
 
     @Test
     public void hasType() {
         assertEquals(Type.WOODWIND, clarinet.getType());
+    }
+
+    @Test
+    public void hasDescription() {
+        assertEquals("A description of this item", clarinet.getDescription());
     }
 
     @Test
@@ -31,7 +36,7 @@ public class ClarinetTest {
 
     @Test
     public void canPlay() {
-        assertEquals("Clarinet clarinet clarinet ...", clarinet.play());
+        assertEquals("The sound of the clarinet ...", clarinet.play());
     }
 
     @Test
